@@ -88,7 +88,14 @@
                       <div class="bx--accordion__title">Description</div>
                     </button>
                     <div id="pane1" class="bx--accordion__content">
-                      <p>In this application we propose a generalization of what is presented on IBMQ Experience tutorial (Quantum Emoticon) where the reader can test how the two main principles of quantum computing are exploited: the superposition and the entanglement. </p>
+                      <p>
+                        In this application we propose a generalized algorithm
+                        where the reader can test how the two main principles of quantum computing are exploited:
+                        the superposition and the entanglement.
+                        <br>
+                        Here the reader can use every combination of ASCII characters and visualize their realization with qubits,
+                        either simulated or real.
+                      </p>
                     </div>
                   </li>
                   <li data-accordion-item class="bx--accordion__item">
@@ -97,7 +104,12 @@
                       <div class="bx--accordion__title">How to use it</div>
                     </button>
                     <div id="pane2" class="bx--accordion__content">
-                      <p>Here the reader can use every combination of ASCII character and visualize their realization with qubits, either simulated or real according to what is available on IBMQ Experience. For more information about how to use the IBM Q ExperienceQX, consult the tutorials, or check out the community.</p>
+                      <p>
+                        In this web application, two sets of 2 ASCII characters composed by 14 bits each, for a total of 28 bits, are sent to a back-end to be generally handled.
+                        <br>
+                        A classical back-end should first use a 28 bit memory area to store data to be handled; in this case we use quantum features
+                        to halve the needed memory, as we are using a 14 qubit quantum processor to handle all information at the same time.
+                      </p>
                     </div>
                   </li>
               </ul>
@@ -130,7 +142,20 @@
                                   <div class="bx--accordion__title">Description</div>
                                 </button>
                                 <div id="pane1" class="bx--accordion__content">
-                                  <p>This APP feature make use of well known math representation of vector in 3 dimension which is widely used in this quantum com-puting dissemination as it is a clear and and useful tool: the Bloch Sphere. The user can visualize the effect of quantum gate application on its qubit (versor). Since we are working with orthonormal basis we give the user the freedom to star from different basis: X-basis, Y-basis or Z-basis. Current version of the application does not allow subsequent gate application so the user must reset its result before applying a new transformation. The user can perform measurement of the quantum state on all the three basis (x,y,z) in order to reconstruct the quantum state on the Bloch Sphere. </p>
+                                  <p>
+                                    This web application makes use of well known mathematical representation of vector in 3 dimension which is
+                                    widely used in this quantum computing dissemination as it is a clear and and useful tool: the Bloch Sphere.
+                                    <br>
+                                    The user can visualize the effect of quantum gate application on its qubit (versor).
+                                    Since we are working with orthonormal basis we give the user the freedom to star from different basis:
+                                    X-basis, Y-basis or Z-basis.
+                                    <br>
+                                    Current version of the application does not allow subsequent gate application so the user must
+                                    reset its result before applying a new transformation.
+                                    <br>
+                                    The user can perform measurement of the quantum state on all the three basis (x,y,z)
+                                    in order to reconstruct the quantum state on the Bloch Sphere.
+                                  </p>
                                 </div>
                               </li>
                               <li data-accordion-item class="bx--accordion__item">
@@ -139,7 +164,17 @@
                                   <div class="bx--accordion__title">How to use it</div>
                                 </button>
                                 <div id="pane2" class="bx--accordion__content">
-                                  <p>In order to make this algorithm fully visual we utilized the python library qutip (http://qutip.org/) that allows to perform analytical calculation and build the block sphere. The interesting feature is that the result of gate application is showed on two separate Bloch Spheres. In the left one the user is pre-sent the result coming from IBMQ Experience while on the right one we present the analytic result. This comparison can help to understand some typical quantum defects com- ing from real hardware noise or approximation.</p>
+                                  <p>
+                                    In order to make this algorithm fully visual we utilized the python library qutip
+                                    (http://qutip.org/) that allows to perform analytical calculation and build the block sphere.
+                                    <br>
+                                    The interesting feature is that the result of gate application is showed on two separate Bloch Spheres.
+                                    In the left one the user is presented the result coming from real quantum computation while on the right one
+                                    is presented the classical analytic result.
+                                    <br>
+                                    This comparison can help to understand some typical quantum defects
+                                    coming from real hardware noise or approximation.
+                                  </p>
                                 </div>
                               </li>
                               <li data-accordion-item class="bx--accordion__item">
@@ -148,7 +183,13 @@
                                   <div class="bx--accordion__title">The algorithm</div>
                                 </button>
                                 <div id="pane3" class="bx--accordion__content">
-                                  <p>This algorithm it’s defined inside the ibm quantum experience User guide, it consist to We decided to offer two different prospectives giving two bloch-spheres (<a href="https://quantumexperience.ng.bluemix.net/proxy/tutorial/full-user-guide/002-The_Weird_and_Wonderful_World_of_the_Qubit/005-The_Bloch_Sphere.html" target="_blank">Quantum Experience docs link</a>), one to show the QST performance and another one to show the analytical calculation (quantum tomography - <a href="https://en.wikipedia.org/wiki/Quantum_tomography" target="_blank">Quantum Tomography Wikipedia link</a>), in order to give evidence of the errors coming from dechoerence/noise generated from the real device or from the configured noise-simulator.</p>
+                                  <p>
+                                    This algorithm it’s defined inside the ibm quantum experience User guide,
+                                    it consist to we decided to offer two different prospectives giving two Bloch Spheres,
+                                    one to show the QST performance and another one to show the analytical calculation
+                                    (quantum tomography - <a href="https://en.wikipedia.org/wiki/Quantum_tomography" target="_blank">Quantum Tomography Wikipedia link</a>),
+                                    in order to give evidence of the errors coming from dechoerence/noise generated
+                                    from the real device or from the configured noise-simulator.</p>
                                 </div>
                               </li>
                           </ul>
