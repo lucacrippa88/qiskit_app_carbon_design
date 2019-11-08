@@ -7,7 +7,7 @@ import requests
 from qiskit import ClassicalRegister, QuantumRegister, QuantumCircuit
 from qiskit import execute
 from qiskit import IBMQ
-from qiskit import Aer
+from qiskit import BasicAer
 from qiskit.providers.aer import noise
 from noisedev import setup_noise,emo_noise
 
@@ -103,9 +103,9 @@ def sendQuantum(commandList,qubitNr,operation):
     # check if request is for simulator or real hardware
     #b = "ibmq_qasm_simulator"
     #back=IBMQ.get_backend(b)
-    #backend=Aer.backends()[0].name() ## deprecated way to call backand 
+    #backend=Aer.backends()[0].name() ## deprecated way to call backand
     backend = Aer.get_backend('qasm_simulator')
-    shots_sim = 400 
+    shots_sim = 400
     print("executing algorithm")
     job_exp = execute(qc, backend, shots=shots_sim)
     stats_sim = job_exp.result().get_counts()
