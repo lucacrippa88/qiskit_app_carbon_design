@@ -1,4 +1,4 @@
-name: app_carbon
+name: q-suite
 channels:
   - menpo
   - defaults
