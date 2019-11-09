@@ -16,5 +16,5 @@ dependencies:
     - flask_login
     - qutip
     - ibmquantumexperience==2.0.4
-    - qiskit==0.7.0
+    - qiskit==0.11.2
 

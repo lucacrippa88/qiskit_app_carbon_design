@@ -1,5 +1,5 @@
 applications:
-- name: test-app-test-a
+- name: antonelloprova1
   memory: 540M
   instances: 1
   disk_quota: 2024M
