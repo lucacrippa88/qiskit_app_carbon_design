@@ -7,7 +7,8 @@ import requests
 from qiskit import ClassicalRegister, QuantumRegister, QuantumCircuit
 from qiskit import execute
 from qiskit import IBMQ
-from qiskit import BasicAer
+from qiskit import Aer
+#from qiskit import BasicAer basic, Python only, implementation called BasicAer in Terra that can be used as a drop-in replacement for Aer
 from qiskit.providers.aer import noise
 from noisedev import setup_noise,emo_noise
 

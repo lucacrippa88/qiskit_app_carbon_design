@@ -40,12 +40,13 @@ with open('config.json') as f:
 
 # QISKit authentication
 print('loading credentials')
-# IBMQ.load_accounts()
 IBMQ.enable_account(credentials_file['IBMQ']['apikey'])
+IBMQ.load_account() #to check
 print('printing backends')
-backends = IBMQ.backends()
+provider = IBMQ.get_provider(hub='ibm-q')
+#backends = IBMQ.backends()
 print("========")
-print(backends)
+provider.backends()
 print('finished printing')
 
 app = flask.Flask(__name__)
