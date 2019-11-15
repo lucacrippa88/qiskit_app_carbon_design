@@ -41,10 +41,9 @@ with open('config.json') as f:
 # QISKit authentication
 print('loading credentials')
 IBMQ.enable_account(credentials_file['IBMQ']['apikey'])
-IBMQ.load_account() #to check
+#IBMQ.load_account() #to check
 print('printing backends')
 provider = IBMQ.get_provider(hub='ibm-q')
-#backends = IBMQ.backends()
 print("========")
 provider.backends()
 print('finished printing')
